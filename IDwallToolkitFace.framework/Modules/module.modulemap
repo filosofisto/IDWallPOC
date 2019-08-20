@@ -1,0 +1,6 @@
+framework module IDwallToolkitFace {
+  umbrella header "IDwallToolkitFace.h"
+
+  export *
+  module * { export * }
+}

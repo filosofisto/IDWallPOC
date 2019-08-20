@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D6D9058D8A95913B38D16FA /* Pods_IDWallPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E80E21108F460F1D069C22 /* Pods_IDWallPOC.framework */; };
 		A02AC6AC230AD5EE00F7994E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AC6AB230AD5EE00F7994E /* AppDelegate.swift */; };
 		A02AC6AE230AD5EE00F7994E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AC6AD230AD5EE00F7994E /* ViewController.swift */; };
 		A02AC6B1230AD5EE00F7994E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02AC6AF230AD5EE00F7994E /* Main.storyboard */; };
 		A02AC6B3230AD5EF00F7994E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02AC6B2230AD5EF00F7994E /* Assets.xcassets */; };
 		A02AC6B6230AD5EF00F7994E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02AC6B4230AD5EF00F7994E /* LaunchScreen.storyboard */; };
+		A0A49CE9230B220700358024 /* IDwallToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A49CE8230B220700358024 /* IDwallToolkit.framework */; };
+		A0A49CEA230B220700358024 /* IDwallToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0A49CE8230B220700358024 /* IDwallToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A0A49CEB230B220700358024 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0A49CEA230B220700358024 /* IDwallToolkit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		439F0E097189C9BB2C778565 /* Pods-IDWallPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDWallPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDWallPOC/Pods-IDWallPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		50E80E21108F460F1D069C22 /* Pods_IDWallPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDWallPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A2DE9EB7DD891EA6C90861 /* Pods-IDWallPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDWallPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDWallPOC/Pods-IDWallPOC.release.xcconfig"; sourceTree = "<group>"; };
 		A02AC6A8230AD5EE00F7994E /* IDWallPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDWallPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02AC6AB230AD5EE00F7994E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A02AC6AD230AD5EE00F7994E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,7 @@
 		A02AC6B2230AD5EF00F7994E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A02AC6B5230AD5EF00F7994E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A02AC6B7230AD5EF00F7994E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0A49CE8230B220700358024 /* IDwallToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDwallToolkit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +50,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A49CE9230B220700358024 /* IDwallToolkit.framework in Frameworks */,
+				2D6D9058D8A95913B38D16FA /* Pods_IDWallPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		805976C75A3C4358B279B39C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50E80E21108F460F1D069C22 /* Pods_IDWallPOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A02AC69F230AD5EE00F7994E = {
 			isa = PBXGroup;
 			children = (
+				A0A49CE8230B220700358024 /* IDwallToolkit.framework */,
 				A02AC6AA230AD5EE00F7994E /* IDWallPOC */,
 				A02AC6A9230AD5EE00F7994E /* Products */,
+				CCE70A96A6FAFB7A9735816A /* Pods */,
+				805976C75A3C4358B279B39C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +98,15 @@
 			path = IDWallPOC;
 			sourceTree = "<group>";
 		};
+		CCE70A96A6FAFB7A9735816A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				439F0E097189C9BB2C778565 /* Pods-IDWallPOC.debug.xcconfig */,
+				85A2DE9EB7DD891EA6C90861 /* Pods-IDWallPOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A02AC6BA230AD5EF00F7994E /* Build configuration list for PBXNativeTarget "IDWallPOC" */;
 			buildPhases = (
+				760D6B6B974E2CC0CF4187C2 /* [CP] Check Pods Manifest.lock */,
 				A02AC6A4230AD5EE00F7994E /* Sources */,
 				A02AC6A5230AD5EE00F7994E /* Frameworks */,
 				A02AC6A6230AD5EE00F7994E /* Resources */,
+				A0A49CEB230B220700358024 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +174,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		760D6B6B974E2CC0CF4187C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDWallPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A02AC6A4230AD5EE00F7994E /* Sources */ = {
@@ -280,10 +350,15 @@
 		};
 		A02AC6BB230AD5EF00F7994E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439F0E097189C9BB2C778565 /* Pods-IDWallPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GEJ8TUECN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IDWallPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +373,15 @@
 		};
 		A02AC6BC230AD5EF00F7994E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A2DE9EB7DD891EA6C90861 /* Pods-IDWallPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GEJ8TUECN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IDWallPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
