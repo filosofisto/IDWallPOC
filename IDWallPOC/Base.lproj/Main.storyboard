@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,38 +15,87 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IDWallPOC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDWall POC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mo-Ld-aAV">
-                                <rect key="frame" x="132" y="93" width="150" height="36"/>
+                                <rect key="frame" x="112.5" y="188.5" width="150" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="E82-u9-Bh8"/>
+                                    <constraint firstAttribute="height" constant="36" id="A7o-hb-KTT"/>
                                     <constraint firstAttribute="width" constant="150" id="Edf-Ri-yZl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="qQ3-He-aPN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7H-XG-lbB">
-                                <rect key="frame" x="94" y="223" width="220" height="30"/>
+                                <rect key="frame" x="77.5" y="318.5" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7Hu-5l-OsP"/>
-                                    <constraint firstAttribute="width" constant="220" id="zgi-2a-Zet"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="D9l-Ww-aF3"/>
+                                    <constraint firstAttribute="width" constant="220" id="WSx-hv-s48"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="ek7-Hw-VEL"/>
+                                    <constraint firstAttribute="height" constant="30" id="lgH-MK-l1H"/>
                                 </constraints>
-                                <state key="normal" title="Start Flow"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Face Flow"/>
                                 <connections>
-                                    <action selector="startFlowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8m-b3-CkA"/>
+                                    <action selector="faceFlowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8m-b3-CkA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksB-H0-fwI">
+                                <rect key="frame" x="77.5" y="432" width="220" height="30"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Abq-IZ-qJY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KyL-Vk-eVt"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="L9g-lz-jJQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="M1A-FS-iMw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Z2K-F5-oJD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="fTj-tD-Qc0"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="jsD-6E-cjm"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="vwA-ja-OkU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Complete Flow"/>
+                                <connections>
+                                    <action selector="completeFlowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Jq-kB-Gdf"/>
+                                    <action selector="faceFlowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSf-7e-3c5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-gP-D4e">
+                                <rect key="frame" x="77.5" y="374" width="220" height="30"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="8zQ-6a-0dt"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wzc-fs-vwd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Z7Q-1Y-Pi3"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="iOH-w3-O5u"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="mey-Lg-wDx"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="nPm-Xx-2L7"/>
+                                    <constraint firstAttribute="width" constant="220" id="p1v-Vd-n8R"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="q2h-yD-io8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Document Flow"/>
+                                <connections>
+                                    <action selector="documentFlowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eH-Xj-uJZ"/>
+                                    <action selector="faceFlowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rMW-8r-df7"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="9Mo-Ld-aAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="41l-pp-fPb"/>
                             <constraint firstItem="9Mo-Ld-aAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9At-Di-Knh"/>
-                            <constraint firstItem="9Mo-Ld-aAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="R5h-S6-4K4"/>
-                            <constraint firstItem="D7H-XG-lbB" firstAttribute="top" secondItem="9Mo-Ld-aAV" secondAttribute="bottom" constant="94" id="VtL-8j-7iB"/>
-                            <constraint firstItem="D7H-XG-lbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="shr-FU-XNH"/>
+                            <constraint firstItem="VUl-gP-D4e" firstAttribute="top" secondItem="D7H-XG-lbB" secondAttribute="bottom" constant="25.5" id="AY7-BR-74c"/>
+                            <constraint firstItem="ksB-H0-fwI" firstAttribute="top" secondItem="VUl-gP-D4e" secondAttribute="bottom" constant="28" id="JqL-KE-chx"/>
+                            <constraint firstItem="ksB-H0-fwI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LkD-R7-erb"/>
+                            <constraint firstItem="VUl-gP-D4e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jsM-Ke-RYR"/>
+                            <constraint firstItem="D7H-XG-lbB" firstAttribute="top" secondItem="9Mo-Ld-aAV" secondAttribute="bottom" constant="94" id="pil-Yl-kri"/>
+                            <constraint firstItem="D7H-XG-lbB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q6J-Ak-ynB"/>
+                            <constraint firstItem="D7H-XG-lbB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xxI-tt-8Kc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -13,6 +13,8 @@
 		A02AC6B1230AD5EE00F7994E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02AC6AF230AD5EE00F7994E /* Main.storyboard */; };
 		A02AC6B3230AD5EF00F7994E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02AC6B2230AD5EF00F7994E /* Assets.xcassets */; };
 		A02AC6B6230AD5EF00F7994E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02AC6B4230AD5EF00F7994E /* LaunchScreen.storyboard */; };
+		A031C7B7230C873B006571FD /* IDWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031C7B6230C873B006571FD /* IDWall.swift */; };
+		A031C7B9230D75B5006571FD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031C7B8230D75B5006571FD /* Helper.swift */; };
 		A0A49CE9230B220700358024 /* IDwallToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A49CE8230B220700358024 /* IDwallToolkit.framework */; };
 		A0A49CEA230B220700358024 /* IDwallToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0A49CE8230B220700358024 /* IDwallToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		A02AC6B2230AD5EF00F7994E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A02AC6B5230AD5EF00F7994E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A02AC6B7230AD5EF00F7994E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A031C7B6230C873B006571FD /* IDWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDWall.swift; sourceTree = "<group>"; };
+		A031C7B8230D75B5006571FD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A0A49CE8230B220700358024 /* IDwallToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDwallToolkit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 		A02AC6AA230AD5EE00F7994E /* IDWallPOC */ = {
 			isa = PBXGroup;
 			children = (
+				A031C7B8230D75B5006571FD /* Helper.swift */,
+				A031C7B6230C873B006571FD /* IDWall.swift */,
 				A02AC6AB230AD5EE00F7994E /* AppDelegate.swift */,
 				A02AC6AD230AD5EE00F7994E /* ViewController.swift */,
 				A02AC6AF230AD5EE00F7994E /* Main.storyboard */,
@@ -206,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02AC6AE230AD5EE00F7994E /* ViewController.swift in Sources */,
+				A031C7B7230C873B006571FD /* IDWall.swift in Sources */,
 				A02AC6AC230AD5EE00F7994E /* AppDelegate.swift in Sources */,
+				A031C7B9230D75B5006571FD /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

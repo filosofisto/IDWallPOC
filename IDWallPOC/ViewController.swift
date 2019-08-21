@@ -8,31 +8,47 @@
 
 import UIKit
 import IDwallToolkit
+import AVKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, IDWallCall {
+    
+    let idwall = IDWall(authKey: "23ba2b9963f6e5f5e97229f1a16ccc5e")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        idwallInitialize()
+        
+        idwall.delegate = self
     }
     
-    private func idwallInitialize() {
-        IDwallToolkitSettings.sharedInstance().initWithAuthKey(("23ba2b9963f6e5f5e97229f1a16ccc5e"))
-        //IDwallToolkitSettings.sharedInstance().setColorScheme(id<IDwallColorScheme>)
-        
-        IDwallToolkitFlow.sharedInstance().startComplete(with:
-            IDwallDocumentTypeAny, andCallBack: { (data, error) in
-                if let validError = error {
-                    print(validError)
-                } else if let validData = data {
-                    print(validData["token"] as! String)
-                }
-        })
+    // MARK: IDWallCall --------------------------------------------------
+    func onError(_ error: Error) {
+        Helper.alert(error.localizedDescription, controller: self)
     }
+    
+    func onSuccessFaceFlow() {
+        Helper.alert("FaceFlow worked fine ;)", controller: self)
+    }
+    
+    func onSuccessDocumentFlow(token: String) {
+        Helper.alert("Token recebido: \(token)", controller: self)
+    }
+    
+    func onSuccessCompleteFlow(token: String) {
+        Helper.alert("Token recebido: \(token)", controller: self)
+    }
+    // -------------------------------------------------------------------
 
-    @IBAction func startFlowAction(_ sender: UIButton) {
-        
+    @IBAction func faceFlowAction(_ sender: UIButton) {
+        idwall.startFaceFlow()
     }
     
+    @IBAction func documentFlowAction(_ sender: UIButton) {
+        idwall.startDocumentFlow()
+    }
+    
+    
+    @IBAction func completeFlowAction(_ sender: UIButton) {
+        idwall.startCompleteFlow()
+    }
 }
 
